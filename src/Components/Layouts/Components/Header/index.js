@@ -12,6 +12,8 @@ import images from '~/Access/Images/logo.svg';
 import AccountItem from '~/Components/AccountItems';
 import Buttons from '~/Components/Buttons';
 import Menu from '~/Components/Popper/Menu';
+import { UploadIcon } from '~/Components/Icons';
+import Image from '~/Components/Images'
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -131,7 +133,7 @@ function Header() {
                             <>
                                 <Tippy delay={[0, 300]} content="Upload">
                                 <button className={cx('action-btn')}> 
-                                    <FontAwesomeIcon icon={faCloudUpload} />
+                                    <UploadIcon></UploadIcon>
                                 </button>
                                     
                                 </Tippy>
@@ -148,7 +150,8 @@ function Header() {
                     <Menu items={ currentUser ? userMenu :  MENU_ITEMS} onChange={handleMenuChange}>
                         {
                             currentUser ? (
-                               <img className={cx('user-avatar')} alt='Nguyễn Văn A' ></img>
+                               <Image 
+                               fallback= 'https://fullstack.edu.vn/assets/f8-icon-lV2rGpF0.png' src="kkk" className={cx('user-avatar')} alt='Nguyễn Văn A' ></Image>
                             ) : (
 
                                 <button className={cx('more-btn')}>

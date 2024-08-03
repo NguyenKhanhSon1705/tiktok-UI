@@ -1,5 +1,6 @@
 const images = {
-    logo: require('~/assets/images/logo.svg').default,
+    logo: require('~/Access/Images/logo.svg').default,
+    noImage: require('~/Access/Images/no-image.png')
 };
 
 export default images;
