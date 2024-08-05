@@ -36,6 +36,13 @@ function Search() {
     function handleHidenResult() {
         setShowResult(false)
     }
+    const handleChange = e => {
+        const searchValue = e.target.value
+
+        if(!searchValue.startsWith(' ')){
+            setSearchValue(e.target.value)
+        }
+    }
 
     return (<div>
         <HeadlessTippy
@@ -58,7 +65,7 @@ function Search() {
                     ref={inputRef}
                     placeholder="Search accounts and videos"
                     spellCheck={false}
-                    onChange={e => setSearchValue(e.target.value)}
+                    onChange={handleChange}
                     onFocus={() => setShowResult(true)}
                 />
                 {searchValue && (

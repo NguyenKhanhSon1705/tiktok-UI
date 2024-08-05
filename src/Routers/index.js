@@ -5,12 +5,15 @@ import Upload from "~/Components/Pages/Upload";
 import { HeaderOnly } from "~/Components/Layouts";
 import Search from "~/Components/Pages/Search";
 
+import routesConfig from '~/Config/routes'
+
+
 const publicRoutes = [
-    { path: '/' , component: Home},
-    { path: '/following' , component: Following },
-    { path: '/:nickname' , component: Profile },
-    { path: '/upload' , component: Upload, layout: HeaderOnly },
-    { path: '/search' , component: Search, layout: null },
+    { path: routesConfig.home , component: Home},
+    { path: routesConfig.following , component: Following },
+    { path: routesConfig.profile , component: Profile },
+    { path: routesConfig.upload , component: Upload, layout: HeaderOnly },
+    { path: routesConfig.search , component: Search, layout: null },
     
 ]
 
