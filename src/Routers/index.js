@@ -1,9 +1,9 @@
-import Home from "~/Components/Pages/Home";
-import Following from "~/Components/Pages/Following";
-import Profile from "~/Components/Pages/Profile";
-import Upload from "~/Components/Pages/Upload";
+import Home from "~/Pages/Home";
+import Following from "~/Pages/Following";
+import Profile from "~/Pages/Profile";
+import Upload from "~/Pages/Upload";
 import { HeaderOnly } from "~/Layouts";
-import Search from "~/Components/Pages/Search";
+import Search from "~/Pages/Search";
 
 import config from '~/Config'
 
