@@ -1,4 +1,4 @@
-import Header from "~/Components/Layouts/Components/Header";
+import Header from "~/Layouts/Components/Header";
 function HeaderOnly({ children }) {
     return (
         <div>
